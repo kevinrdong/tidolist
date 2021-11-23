@@ -32,7 +32,6 @@ export default {
   name: 'App',
   data() {
     return {
-      finishdo: "",
       inputtodo: "",
       todolist: [],
       finlist: [],
@@ -47,7 +46,7 @@ export default {
     },
     complete: function(id){
       this.finlist.push({
-        findo: this.todolist[id]
+        findo: this.todolist[id].todo
       });
       this.todolist.splice(id,1);
     },
