@@ -8,7 +8,7 @@
     <br>
     <ul style="none">
     <li v-for="(t,id) in todolist" :key="t.id" class="todo_list">
-      {{id+1}}.{{t.todo}}<div class="remove" v-on:click="complete(id)">finish</div>
+      {{id+1}}{{t.todo}}<div class="remove" v-on:click="complete(id)">finish</div>
     </li>
   </ul>
   </div>
@@ -77,6 +77,7 @@ html,body {
   padding: 20px;
   border: solid 4px #333;
   background-color: #f3f3f3;
+  width: 400px;
 }
 h1 {
   padding: 20px;
@@ -114,6 +115,7 @@ ul {
 }
 li {
   display: flex;
+  margin-left: -25px;
 }
 .remove {
   position: absolute;
