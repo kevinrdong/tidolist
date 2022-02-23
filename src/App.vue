@@ -16,7 +16,7 @@
     <label>已完成：</label>
     <ul  style="none">
       <li v-for="(ft,id) in finlist" :key="ft.id" class="fin_list">
-      {{id+1}}.{{ft.findo}}{{ new Date().getFullYear() }}/{{ new Date().getMonth()+1 }}/{{ new Date().getDate() }}  {{ new Date().getHours() }}:{{ new Date().getMinutes() }}
+      {{id+1}}.{{ft.findo}}   {{ new Date().getFullYear() }}/{{ new Date().getMonth()+1 }}/{{ new Date().getDate() }}  {{ new Date().getHours() }}:{{ new Date().getMinutes() }}
       <div class="remove" v-on:click="del(id)">Delete</div>
       </li>
     </ul>
