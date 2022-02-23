@@ -8,7 +8,7 @@
     <br>
     <ul style="none">
     <li v-for="(t,id) in todolist" :key="t.id" class="todo_list">
-      {{id+1}}{{t.todo}}<div class="remove" v-on:click="complete(id)">finish</div>
+      {{id+1}}.{{t.todo}}<div class="remove" v-on:click="complete(id)">finish</div>
     </li>
   </ul>
   </div>
