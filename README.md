@@ -23,7 +23,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-Usage
+### Usage
 於空白欄位輸入事項，點擊新增鍵可將該項目新增至待辦清單。
 
 點擊 finish 鍵可將該項目移至已完成清單中，並記錄事項完成的時間。
